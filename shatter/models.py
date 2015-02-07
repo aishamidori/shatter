@@ -14,8 +14,8 @@ class Comment(models.Model):
 class Company(models.Model):
     name = models.CharField(max_length=50) 
     website = models.URLField()
-    statistic = models.OnetoOneField('Statistic')
-    diversity = models.DecimalField(max_digits=None, decimal_places=None)
+    #statistic = models.OnetoOneField('Statistic')
+    #diversity = models.DecimalField(max_digits=None, decimal_places=None)
     def __str__(self):
         return self.name
 
