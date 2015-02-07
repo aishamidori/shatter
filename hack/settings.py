@@ -1,5 +1,5 @@
 """
-Django settings for shatter project.
+Django settings for hack project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.7/topics/settings/
@@ -17,7 +17,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '&)^g77czlq2l1h0j9*)30p=bxtm(fns+3cr6r6-7@r=%=xjn91'
+SECRET_KEY = '9uhld%8b$ow*a&n)xsf#1y3_wf4%^ksq8!^#-pxue5metf%brl'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -48,9 +48,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'shatter.urls'
+ROOT_URLCONF = 'hack.urls'
 
-WSGI_APPLICATION = 'shatter.wsgi.application'
+WSGI_APPLICATION = 'hack.wsgi.application'
 
 
 # Database
