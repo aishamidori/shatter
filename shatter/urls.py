@@ -2,12 +2,6 @@ from django.conf.urls import patterns, include, url
 from . import views
 
 urlpatterns = patterns('',
-    # Examples:
-    # url(r'^$', 'hack.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
-
-                       #url(r'^admin/', include(admin.site.urls)),
-                       #url(r'', include('shatter.urls')),
-                       url(r'^$', views.landing)
-
+   url(r'^$', views.landing),
+   url(r'^company/(?P<company>\w{1,50})/$', views.company)
 )

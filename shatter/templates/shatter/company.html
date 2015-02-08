@@ -1,0 +1,31 @@
+{% load staticfiles %} 
+
+<html>
+	<head> 
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+	</head>
+    <body>
+        <div>
+            <img src="/{{ company.image.url }}" height=70px width=70px></img>
+            <h1>{{ company.name }}</h1>
+            <a>{{ company.website }}</a>
+        </div>
+
+        <div id="statbox">
+            <p class="rating-header">Overall Rating:</p>
+            <p class="rating-header">Overall Rating:</p>
+            <p class="rating-header">Diversity:</p>
+            <p class="rating-header">Inclusivity:</p>
+        </div>
+
+        {% for comment in comments %}
+        <div class="comment">
+            <h4>{{ comment.position }}</h4>
+            <p>{{ comment.comment }}</p>
+        </div>
+        {% endfor %}
+    </body>
+</html>
