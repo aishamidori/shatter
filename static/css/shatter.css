@@ -6,7 +6,7 @@ div {
 }
 
 body {
-	background-image: url("/static/shatter4fade.jpg");
+	/*background-image: url("/static/shatter4fade.jpg");*/
 }
 
 h1 a {
@@ -18,4 +18,25 @@ h1 a {
 
 form {
 	margin-left: 525px;
+}
+
+p1 {
+	color: #FCA205;
+	margin-left: 550px;
+	line-height: 50px;
+	font-family: Century Gothic;
+}
+
+p2 {
+	color: #FCA205;
+	margin-left: 340px;
+	font-family: Century Gothic;
+
+}
+
+p3 {
+	color: #FCA205;
+	margin-left: 500px;
+	font-family: Century Gothic;
+
 }
