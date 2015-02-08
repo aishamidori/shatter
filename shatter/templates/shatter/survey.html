@@ -1,0 +1,88 @@
+{% load staticfiles %} 
+
+<html>
+	<head > 
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<!-- <link rel="stylesheet" href="{% static 'css/blog.css' %}"> -->
+        <link rel="stylesheet" href="{% static 'css/survey.css' %}">
+	</head>
+    <body>
+        <div>
+            <!-- <img src="/{{ company.image.url }}" height=70px width=70px></img> -->
+            <h1>User Input</h1>
+            <h3> I am a user</h3>
+        </div>
+
+        <form action="demo_form.asp">
+            <p>Company Name: </p>
+            <input type="text" name="CompanyName" ><br>
+            <!-- Last name: <input type="text" name="LastName" value="Mouse"><br> -->
+            <p>Comments: </p>
+            <textarea type="text" name="Comments" cols="50" rows="8"></textarea> 
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <div id="statbox">
+            <p class="rating-header"> Diversity Efforts:</p>
+            <div class="rating">
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div><br><br>
+            <p class="rating-header">Maternity Support:</p>
+            <div class="rating">
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div><br><br>
+            <p class="rating-header">Work Life Balance:</p>
+            <div class="rating">
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div><br><br>
+            <p class="rating-header">Sexual Harrassment Policy:</p>
+            <div class="rating">
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div><br><br>
+            <p class="rating-header">Programs for Women in Computing :</p>
+            <div class="rating">
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div><br><br>
+            <p class="rating-header">Mentorship:</p>
+            <div class="rating">
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div><br><br>
+            <p class="rating-header">Opportunities for Advancement:</p>
+            <div class="rating">
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div><br><br>
+            <p class="rating-header">Women in Leadership:</p>
+            <div class="rating">
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div><br><br>
+            <p class="rating-header">Reporting Structure:</p>
+            <div class="rating">
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div><br><br>
+            <p class="rating-header">Overall Rating:</p>
+            <div class="rating">
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div><br><br>
+
+
+
+           
+    
+    
+    
+    
+    
+    
+        </div>
+
+        {% for comment in comments %}
+        <div class="comment">
+            <h4>{{ comment.position }}</h4>
+            <p>{{ comment.comment }}</p>
+        </div>
+        {% endfor %}
+    </body>
+</html>
