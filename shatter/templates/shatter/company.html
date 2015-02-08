@@ -8,42 +8,47 @@
 		<link rel="stylesheet" href="{% static 'css/company.css' %}">
 	</head>
     <body>
+        <div id="color-block">
+        </div>
         <div id="company-header">
             <img src="{{ BASE_DIR }}{{ company.image.url }}" height=70px width=70px></img>
             <div id="title">
-                <h1>{{ company.name }}</h1>
-                <a>{{ company.website }}</a>
+                <h2>{{ company.name }}</h2>
+                <a href={{ company.website }}>{{ company.website }}</a>
             </div>
         </div>
+        <div id="info">
+            <div id="statbox">
+                <div class="rating">
+                    <p class="rating-header">Percent Women:</p>
+                    <p class="rating-result">{{ company.percent_women }}</p>
+                </div>
+                <div class="rating">
+                    <p class="rating-header">Overall Rating:</p>
+                    <p class="rating-result">{{ company.overall_rating }}</p>
+                </div>
+                <div class="rating">
+                    <p class="rating-header">Diversity:</p>
+                    <p class="rating-result">{{ company.diversity }}</p>
+                </div>
+                <div class="rating">
+                    <p class="rating-header">Inclusivity:</p>
+                    <p class="rating-result">{{ company.inclusivity }}</p>
+                </div>
+            </div>
 
-        <div id="statbox">
-            <div class="rating">
-                <p class="rating-header">Percent Women:</p>
-                <p class="rating-result">{{ company.percent_women }}</p>
-            </div>
-            <div class="rating">
-                <p class="rating-header">Overall Rating:</p>
-                <p class="rating-result">{{ company.overall_rating }}</p>
-            </div>
-            <div class="rating">
-                <p class="rating-header">Diversity:</p>
-                <p class="rating-result">{{ company.diversity }}</p>
-            </div>
-            <div class="rating">
-                <p class="rating-header">Inclusivity:</p>
-                <p class="rating-result">{{ company.inclusivity }}</p>
+            <div id="comments">
+                <h4 id="comment-header" style="font-style: bold">Employee Feedback</h4>
+                {% for comment in comments %}
+                <div class="comment">
+                    <h4>{{ comment.position }} at {{ company.name }}</h4>
+                    <p class="rating-header">{{ comment.tag }} Rating:</p>
+                    <p class="rating-result">{{ comment.rating }}</p>
+
+                    <p class="comment-body">{{ comment.comment }}</p>
+                </div>
+                {% endfor %}
             </div>
         </div>
-
-        {% for comment in comments %}
-        <div class="comment">
-            <h4 style="font-weight:bold; position:relative; float:left; padding-right:5px">Role:</h4>
-            <h4>{{ comment.position }}</h4>
-            <p class="rating-header">{{ comment.tag }} Rating:</p>
-            <p class="rating-result">{{ comment.rating }}</p>
-
-            <p class="comment-body">{{ comment.comment }}</p>
-        </div>
-        {% endfor %}
     </body>
 </html>

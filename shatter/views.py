@@ -14,3 +14,6 @@ def company(request, company=None):
                 'company':companyObj,
                 'comments':comments
             }) 
+
+def survey(request):
+    return render(request, 'shatter/survey.html', {})

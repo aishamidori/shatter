@@ -14,18 +14,25 @@
             <title> Shatter</title> 
             <p></p>
         </div>
-            <p1> Break the glass ceiling.</p1>
-        <form action="google" method="GET">
-            <input type="text" placeholder="Find a company" required> 
-            <button type="submit" class="btn btn-primary" onclick="redirectPage()">Search</button>
+            <p class="p1"> Break the glass ceiling.</p>
+        <form name=form action="google" method="GET">
+            <input name=search_field type="text" placeholder="Find a company" required> 
+            <button type="submit" class="btn btn-primary" onclick="OnSubmitForm()">Search</button>
         </form> 
+            <a id="survey-link" href="/survey">or submit a review</a>
         
-            <p2>
+            <p class="p2">
                 Join a community dedicated to increasing transparency about company diversity. 
-            </p2>
-            <p3>
+            </p>
+            <p class="p3">
                 Find a company that cares about you. 
-            </p3>
+            </p>
     </body>
+    <script type="text/javascript">
+        function OnSubmitForm() {
+            console.log(document.search)
+            document.form.action = "/company/" + document.form.search_field.value;
+        }
+    </script>
 </html>
 

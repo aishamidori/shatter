@@ -1,17 +1,33 @@
 body { padding-left:  60px; }
 
-.rating {
+.rating-form {
   unicode-bidi: bidi-override;
   direction: rtl;
   float: left;
 }
-.rating > span {
+.rating-form > span {
   display: inline-block;
   position: relative;
   width: 1.1em;
 }
-.rating > span:hover ~ span:before {
+.rating-form > span:hover ~ span:before {
    content: "\2605";
    color: yellow;
    position: absolute;
+}
+#stats {
+    float: center;
+    margin-top: 10px;
+}
+
+#stats > .rating-form {
+    padding-right: 200px;
+    float: right;
+    cursor: pointer;
+}
+
+.rating-header-form {
+    font-weight: bold;
+    position:relative;
+    float:left;
 }

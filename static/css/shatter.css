@@ -6,37 +6,48 @@ div {
 }
 
 body {
-	/*background-image: url("/static/shatter4fade.jpg");*/
+	text-align: center;
+	overflow: auto;
+	background-image: url("/static/shatter4bw.jpg");
 }
 
 h1 a {
     color: #FCA205;
     font-family: Lobster;
-	margin: 425px;
-	font-size: 350%
+	/*margin: 425px;*/
+	font-size: 350%;
+}
+
+a {
+	font-family: Century Gothic;
 }
 
 form {
-	margin-left: 525px;
+	/*margin-left: 525px;*/
 }
 
-p1 {
+.p1 {
 	color: #FCA205;
-	margin-left: 550px;
+	/*margin-left: 550px;*/
 	line-height: 50px;
 	font-family: Century Gothic;
 }
 
-p2 {
+.p2 {
+	padding-top: 10%;
 	color: #FCA205;
-	margin-left: 340px;
+	/*margin-left: 340px;*/
 	font-family: Century Gothic;
 
 }
 
-p3 {
+.p3 {
 	color: #FCA205;
-	margin-left: 500px;
+	/*margin-left: 500px;*/
 	font-family: Century Gothic;
 
+}
+
+form {
+	margin-bottom: 5px;
 }
