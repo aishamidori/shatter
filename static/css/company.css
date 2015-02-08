@@ -14,11 +14,14 @@ img {
 }
 
 body {
-    font-family: Lobster;
+    font-family: Century Gothic;
     background-color: #F0F0F0;
+    font-size: 200%;
 }
 
 #info {
+    font-family: Garamond;
+    font-size: 10   0%;
     width: 100%;
     position: relative;
     float: center;
@@ -28,7 +31,7 @@ body {
 
 #comment-header {
     font-weight: bold;
-    height: 50px;
+    height: 70px;
     padding: 10px;
     padding-left: 15px;
     padding-bottom: 5px;
@@ -45,7 +48,7 @@ body {
     margin-bottom: 0px;
     margin-top:70px;
     padding: 10px;
-    height: 90px;
+    height: 120px;
     background-color: white;
     border-bottom: 1px solid lightgray;
     border-top: 1px solid gray;
@@ -61,7 +64,7 @@ body {
 
 #statbox {
     border: 1px solid gray;
-    height: 100px;
+    height: 130px;
     float: center;
     padding-top: 15px;
     background-color: white;
@@ -75,6 +78,7 @@ body {
 }
 
 .rating-header {
+    font-family: Garamond;
     font-weight: bold;
     position:relative;
     float:left;
@@ -100,14 +104,19 @@ body {
 }
 
 #color-block {
-    background-color: #F7CB5C;
+    background-color: #FCA205;
     margin-bottom:-100px;
-    height:120px;
+    height:100px;
     width: 100%;
 }
 
 h2 {
+    font-family: Lobster;   
     margin-top: 0px;
     margin-bottom: 5px;
     font-size: 250%;
+}
+
+a {
+    margin-left: 140px;
 }
