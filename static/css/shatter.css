@@ -1,3 +1,21 @@
+
+{% load staticfiles %} 
+
+div {
+	margin-top: 170px;
+}
+
+body {
+	background-image: url("/static/shatter4fade.jpg");
+}
+
 h1 a {
     color: #FCA205;
+    font-family: Lobster;
+	margin: 425px;
+	font-size: 350%
+}
+
+form {
+	margin-left: 525px;
 }
