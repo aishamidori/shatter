@@ -2,24 +2,28 @@
 {% load staticfiles %} 
 
 div {
-	margin-top: 170px;
+	margin-top: 135px;
 }
 
 body {
 	text-align: center;
 	overflow: auto;
-	background-image: url("/static/shatter4bw.jpg");
+	background-image: url("/static/shatter1.jpg");
+	background-repeat: no-repeat;
+	background-size: 1500% 190%;
 }
 
 h1 a {
     color: #FCA205;
     font-family: Lobster;
 	/*margin: 425px;*/
-	font-size: 350%;
+	font-size: 390%;
 }
 
 a {
 	font-family: Century Gothic;
+	font-size: 110%
+
 }
 
 form {
@@ -31,6 +35,8 @@ form {
 	/*margin-left: 550px;*/
 	line-height: 50px;
 	font-family: Century Gothic;
+	font-size: 110%
+
 }
 
 .p2 {
@@ -38,6 +44,7 @@ form {
 	color: #FCA205;
 	/*margin-left: 340px;*/
 	font-family: Century Gothic;
+	font-size: 110%
 
 }
 
@@ -45,6 +52,7 @@ form {
 	color: #FCA205;
 	/*margin-left: 500px;*/
 	font-family: Century Gothic;
+	font-size: 110%
 
 }
 
