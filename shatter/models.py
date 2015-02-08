@@ -14,7 +14,7 @@ class Comment(models.Model):
 class Company(models.Model):
     name = models.CharField(max_length=50) 
     website = models.URLField()
-    image = models.ImageField(upload_to="test", default="static/images/hab.svg", blank=True)
+    image = models.ImageField(upload_to="company-images/", default="static/images/hab.svg", blank=True)
 
     percent_women = models.FloatField(default=0.0)
     # statistic = models.OneToOneField('Statistic', null=True)#default= Statistic(diversity = 0.00, inclusivity = 0.00))
